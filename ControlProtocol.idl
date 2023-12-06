@@ -1,0 +1,15 @@
+/*
+ * Distributed under the OpenDDS License.
+ * See: http://www.opendds.org/license.html
+ */
+
+module DDS_AGENT {
+
+  @topic
+  struct ControlMessage {
+    @key long obj_id;
+    long obj_data;
+    string json;
+    sequence<char> img;
+  };
+};
